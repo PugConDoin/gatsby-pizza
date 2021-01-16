@@ -63,37 +63,44 @@ const LogoStyles = styled.div`
     line-height: 1;
     transition: transform 0.3s;
     &.j {
-      --translateX: -0.05;
+      --rotate: 7deg;
+      --scale: 1.2;
+      --translateX: 0.05em;
+      --translateY: 0em;
     }
     &.e {
-      --rotate: 2deg;
-      --scale: 1.4;
-      --translateX: 0.05em;
-      --translateY: -0.05em;
+      --rotate: -3deg;
+      --scale: 1.1;
+      --translateX: 0.15em;
+      --translateY: 0.1em;
     }
     &.r {
-      --scale: 0.9;
+      --rotate: -2deg;
+      --scale: 0.8;
       --translateY: -0.1em;
-      --translateX: 0.1em;
+      --translateX: 0.2em;
     }
-    &.r {
-      --rotate: 3deg;
-      --scale: 0.9;
-      --translateX: 0.1em;
-      --translateY: 0.23em;
+    &.r2 {
+      --rotate: 15deg;
+      --scale: 1;
+      --translateX: 0.15em;
+      --translateY: 0.1em;
     }
     &.y {
       --rotate: -12deg;
-      --scale: 1.2;
+      --scale: 1.1;
       --translateX: 0.06em;
     }
     &.apos {
-      --translateX: 0.1em;
+      --rotate: 5deg;
+      --translateX: 0.05em;
+      --translateY: 0.02em;
     }
     &.s {
-      --rotate: 12deg;
-      --scale: 0.9;
+      --rotate: 20deg;
+      --scale: 0.75;
       --translateY: -0.14em;
+      --translateX: -0.05em;
     }
   }
 `;
@@ -108,7 +115,7 @@ export default function Logo() {
             <span className="letter j">j</span>
             <span className="letter e">e</span>
             <span className="letter r">r</span>
-            <span className="letter r">r</span>
+            <span className="letter r2">r</span>
             <span className="letter y">y</span>
             <span className="letter apos">'</span>
             <span className="letter s">s</span>

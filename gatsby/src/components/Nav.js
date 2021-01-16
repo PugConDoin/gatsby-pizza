@@ -14,7 +14,7 @@ const NavStyles = styled.nav`
     display: grid;
     text-align: center;
     list-style: none;
-    grid-template-columns: 1fr 1fr auto 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr auto 1fr 1fr 1fr;
     gap: 2rem;
     align-items: center;
     margin-top: -6rem;
@@ -29,14 +29,23 @@ const NavStyles = styled.nav`
     &:nth-child(2) {
       --rotate: -2.5deg;
     }
-    &:nth-child(4) {
+    &:nth-child(3) {
       --rotate: 2.5deg;
     }
-    &:hover {
-      --rotate: 3deg;
+    &:nth-child(5) {
+      --rotate: -1deg;
     }
-    a {
-    font-size: 3rem;
+    &:nth-child(6) {
+      --rotate: 2.5deg;
+    }
+    &:nth-child(7) {
+      --rotate: -2deg;
+  }
+  &:hover {
+    --rotate: 3deg;
+  }
+  a {
+    font-size: 2.5rem;
     text-decoration: none;
     display: block;
     &:hover {
@@ -53,18 +62,26 @@ export default function Nav() {
     <NavStyles>
       <ul>
         <li>
-          <Link to="/">Hot Now</Link>
+          <Link to="/slicemasters">Burgers & Fish</Link>
+        </li>
+
+        <li>
+          <Link to="/pizzas">Kebabs & Wraps</Link>
         </li>
         <li>
-          <Link to="/pizzas">Pizza Menu</Link>
+          <Link to="/">Pizzas & Breads</Link>
         </li>
         <li>
           <Link to="/">
             <Logo />
           </Link>
         </li>
+
         <li>
-          <Link to="/slicemasters">Slicemasters</Link>
+          <Link to="/slicemasters">Meals & Kids</Link>
+        </li>
+        <li>
+          <Link to="/slicemasters">Sides & Other</Link>
         </li>
         <li>
           <Link to="/order">Order Ahead</Link>
