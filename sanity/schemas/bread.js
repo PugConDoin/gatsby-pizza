@@ -1,4 +1,5 @@
 import { GiBread as icon } from 'react-icons/gi';
+import PriceInput from '../components/PriceInput';
 
 export default {
   name: 'bread',
@@ -33,8 +34,9 @@ export default {
       name: 'price',
       title: 'Price',
       type: 'number',
-      description: 'Price in pence',
+      description: PriceInput,
       validation: (Rule) => Rule.min(250), // sets min price to £2.50
+      inputComponent: PriceInput,
     },
     {
       name: 'toppings',
