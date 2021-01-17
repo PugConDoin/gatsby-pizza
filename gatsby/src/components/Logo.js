@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { GiKebabSpit } from 'react-icons/gi';
 import stripes from '../assets/images/stripes.svg';
 
 const LogoStyles = styled.div`
@@ -23,9 +24,10 @@ const LogoStyles = styled.div`
     grid-template-rows: 20% 1fr 1fr;
     align-content: center;
   }
-  .est {
-    font-size: 1.5em;
+  .kebabSpit {
+    font-size: 6em;
     align-self: center;
+    transform: translateY(0.025em);
   }
   h1 {
     display: grid;
@@ -109,7 +111,9 @@ export default function Logo() {
   return (
     <LogoStyles className="logo">
       <div className="inner">
-        <span className="est">EST 1994</span>
+        <span className="kebabSpit">
+          <GiKebabSpit />
+        </span>
         <h1>
           <span className="slicks">
             <span className="letter j">j</span>

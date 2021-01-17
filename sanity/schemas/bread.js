@@ -1,17 +1,16 @@
-import { MdLocalPizza as icon } from 'react-icons/md';
-import PriceInput from '../components/PriceInput';
+import { GiBread as icon } from 'react-icons/gi';
 
 export default {
-  name: 'pizza',
-  title: 'Pizzas',
+  name: 'bread',
+  title: 'Breads',
   type: 'document',
   icon,
   fields: [
     {
       name: 'name',
-      title: 'Pizza Name',
+      title: 'Bread Name',
       type: 'string',
-      description: 'Name of the Pizza',
+      description: 'Name of the Bread',
     },
     {
       name: 'slug',
@@ -34,9 +33,8 @@ export default {
       name: 'price',
       title: 'Price',
       type: 'number',
-      description: PriceInput,
-      validation: (Rule) => Rule.min(500), // sets min price to £5.00
-      inputComponent: PriceInput,
+      description: 'Price in pence',
+      validation: (Rule) => Rule.min(250), // sets min price to £2.50
     },
     {
       name: 'toppings',

@@ -12,6 +12,7 @@ const SiteBorderStyles = styled.div`
   margin: 12rem auto 4rem auto;
   margin-top: clamp(2rem, 10vw, 12rem);
   background: white url(${stripes});
+  background-size: 1500px;
   padding: 5px;
   padding: clamp(5px, 1vw, 25px);
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.044);

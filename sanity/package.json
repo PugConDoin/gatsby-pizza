@@ -1,10 +1,10 @@
 {
-  "name": "slicks-slices-backend",
+  "name": "jerrys-kebabs-backend",
   "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Wes Bos <wesbos@gmail.com>",
+  "author": "Mark Freeman",
   "license": "UNLICENSED",
   "scripts": {
     "lint": "eslint .",

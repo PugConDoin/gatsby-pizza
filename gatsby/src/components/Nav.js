@@ -30,16 +30,16 @@ const NavStyles = styled.nav`
       --rotate: -2.5deg;
     }
     &:nth-child(3) {
-      --rotate: 2.5deg;
+      --rotate: 1deg;
     }
     &:nth-child(5) {
-      --rotate: -1deg;
+      --rotate: -2deg;
     }
     &:nth-child(6) {
-      --rotate: 2.5deg;
+      --rotate: 1deg;
     }
     &:nth-child(7) {
-      --rotate: -2deg;
+      --rotate: -.52deg;
   }
   &:hover {
     --rotate: 3deg;
@@ -62,14 +62,14 @@ export default function Nav() {
     <NavStyles>
       <ul>
         <li>
-          <Link to="/slicemasters">Burgers & Fish</Link>
+          <Link to="/burgers">Burgers & Fish</Link>
         </li>
 
         <li>
-          <Link to="/pizzas">Kebabs & Wraps</Link>
+          <Link to="/kebabs">Kebabs & Wraps</Link>
         </li>
         <li>
-          <Link to="/">Pizzas & Breads</Link>
+          <Link to="/pizzas">Pizzas & Breads</Link>
         </li>
         <li>
           <Link to="/">
@@ -78,10 +78,10 @@ export default function Nav() {
         </li>
 
         <li>
-          <Link to="/slicemasters">Meals & Kids</Link>
+          <Link to="/meals">Meals & Kids</Link>
         </li>
         <li>
-          <Link to="/slicemasters">Sides & Other</Link>
+          <Link to="/sides">Sides & Other</Link>
         </li>
         <li>
           <Link to="/order">Order Ahead</Link>
